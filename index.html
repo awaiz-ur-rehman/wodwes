@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/output.css" />
+  </head>
+  <body>
+    <div class="bg-primary flex flex-wrap items-center justify-center gap-y-2 gap-x-0 xs:gap-x-6 md:gap-14 py-2">
+      <p class="text-white text-sm"><span class="border-b hover:text-pink-600 hover:cursor-pointer transition hover:border-b-pink-600">Get a Quote</span> Today to claim $200 free credit.</p>
+      <p class="text-white text-sm flex items-center gap-2">
+        <span class="text-xl"><i class="fa-solid fa-phone"></i> </span>
+        <span class="">+ 92 306 1070 678</span>
+      </p>
+      <p class="text-white text-sm flex items-center gap-2">
+        <span class="text-xl"><i class="fa-solid fa-envelope"></i> </span>
+        <span class="">sales@wodwes.com</span>
+      </p>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white duration-300 shadow-lg">
+      <div class="maincontainer flex items-center justify-between bg-white py-4 lg:relative lg:z-40">
+        <img src="./images/Wodwes_logo-f91da705.png" alt="" class="w-32 coxs:w-36 md:w-40 xl:w-48 cursor-pointer" />
+        <div class="flex justify-center items-center gap-x-12 nav-ul-div">
+          <ul class="flex justify-between items-center gap-x-8 max-lg:hidden nav-ul">
+            <li class="weight cursor-pointer text-pinky">Home</li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky services" data-toshow="1">
+              Services <span class="text-gray-400"> <i class="fa-solid fa-angle-down arrow"></i></span>
+            </li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky services" data-toshow="2">
+              Industries <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span>
+            </li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky services" data-toshow="3">
+              Technologies <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span>
+            </li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky">Portfolio</li>
+          </ul>
+          <button type="button" class="px-6 py-[15px] pinky text-white border-2 border-pinky font-semibold duration-300 max-lg:hidden hover:bg-white hover:text-black hover:border-pinky">Contact us</button>
+        </div>
+
+        <div class="justify-center items-center gap-x-6 hidden max-lg:flex">
+          <button type="button" class="px-5 py-[13px] pinky text-white border font-semibold transition-all hover:bg-white hover:text-black hover:border-pinky">Contact us</button>
+          <!-- Hamburger -->
+          <span id="hamburger" class="text-4xl cursor-pointer bars"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </div>
+
+      <!-- after 992 -->
+
+      <div class="absolute top-[85px] scale-0 overflow-auto h-screen pb-40 z-50 left-0 right-0 duration-300 bg-white bar-content" id="mobNav">
+        <ul class="nav-ul maincontainer">
+          <li class="weight cursor-pointer py-3 text-pinky">Home</li>
+          <li class="weight transition-all industries" data-todown="1">
+            <span class="cursor-pointer hover:text-pinky py-3 flex items-center justify-between"
+              >Services <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span
+            ></span>
+            <div class="flex hidden flex-col justify-center items-start gap-6 ml-3 pt-[1rem] drop-menu" id="todown-1">
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-1.png" alt="" class="w-6 h-6" />
+                  <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">E-commerce Development</h3>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel E-commerce Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP E-commerce Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress E-commerce Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Shopify Development</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-2.png" alt="" class="w-6 h-6" />
+                  <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Front-end Development</h3>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Vue.js Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Development</a>
+                </li>
+              </ul>
+
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-3.png" alt="" class="w-6 h-6" />
+                  <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Software Development</h3>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP Software Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">CodeIgniter Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel Software Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MERN Software Development</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-4.png" alt="" class="w-6 h-6" />
+                  <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">CMS Development</h3>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Magento Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Drupal Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">BigCommerce Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Joomla Development</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="weight cursor-pointer py-3 transition-all industries" data-todown="2">
+            <span class="hover:text-pinky flex items-center justify-between">
+              Industries <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span
+            ></span>
+            <div class="flex hidden flex-col justify-center items-start gap-6 ml-3 pt-[1rem] drop-menu" id="todown-2">
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Healthcare</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Travel</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Insurance</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Manufacturing</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Transportation and Logistics</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">EdTech</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Enterprise</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Media and Entertainment</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Telecom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="weight py-3 transition-all industries" data-todown="3">
+            <span class="cursor-pointer hover:text-pinky flex items-center justify-between">
+              Technologies <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span
+            ></span>
+            <div class="flex hidden flex-col justify-center items-start gap-6 ml-3 pt-[1rem] drop-menu" id="todown-3">
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">IOS Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Andriod Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Node Js Developers</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Blackchain Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> TypeScript Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MEAN Stack Developers</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mern Stack Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Python Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mobile Application Developers</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Wordpress Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Js Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Js Developers</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="weight cursor-pointer py-3 transition-all hover:text-pinky">Portfolio</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- megamenu -->
+
+    <!-- services -->
+
+    <div class="custom_space flex lg:shadow-lg left-72 right-0 xl:top-[96px] megamenu maincontainer hidden" id="toshow-1">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-1.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">E-commerce Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="page-2/index.html" class="megamenu-item relative duration-200 hover:text-pinky">Laravel E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="page-2/index.html" class="megamenu-item relative duration-200 hover:text-pinky">PHP E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="page-2/index.html" class="megamenu-item relative duration-200 hover:text-pinky">WordPress E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="page-2/index.html" class="megamenu-item relative duration-200 hover:text-pinky">Shopify Development</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-2.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Front-end Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Vue.js Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Development</a>
+        </li>
+      </ul>
+
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-3.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Software Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP Software Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">CodeIgniter Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel Software Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MERN Software Development</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-4.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">CMS Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Magento Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Drupal Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">BigCommerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Joomla Development</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- industries -->
+
+    <div class="custom_space flex lg:shadow-lg left-72 right-0 xl:top-[96px] megamenu maincontainer hidden" id="toshow-2">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Healthcare</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Travel</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Insurance</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Manufacturing</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Transportation and Logistics</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">EdTech</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Enterprise</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Media and Entertainment</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Telecom</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- technologies -->
+    <div class="custom_space flex lg:shadow-lg left-72 right-0 xl:top-[96px] megamenu maincontainer hidden" id="toshow-3">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">IOS Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Andriod Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Node Js Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Blackchain Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> TypeScript Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MEAN Stack Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mern Stack Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Python Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mobile Application Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Wordpress Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Js Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Js Developers</a>
+        </li>
+      </ul>
+    </div>
+
+    <header class="relative py-16 md:pb-[77px] md:pt-[109px]">
+      <img src="./images/Banner-22ae39b2.png" alt="Header banner" class="absolute inset-0 -z-30 w-full h-full" />
+
+      <div class="maincontainer">
+        <section class="wrapper">
+          <div class="sentence">
+            <h1 class="text-3xl font-bold text-center text-white text-wrap leading-[80px] sm:leadind-[30px] md:text-4xl md:leading-[60px] lg:text-5xl xl:text-6xl">
+              We’re a Full Service
+
+              <div class="ms-slider">
+                <ul class="ms-slider__words">
+                  <li class="ms-slider__word">with ease</li>
+                  <li class="ms-slider__word">Effeciency</li>
+                  <li class="ms-slider__word">Design</li>
+                  <li class="ms-slider__word">with ease</li>
+                </ul>
+              </div>
+
+              <br class="" />
+
+              Development Agency
+            </h1>
+          </div>
+        </section>
+
+        <span class="text-pinky flex justify-center items-center py-6 my-8"> Empowering Businesses with Cutting-Edge Web Technologies </span>
+
+        <p class="text-white text-center mb-12">
+          A web design and development agency crafting seamless web and software apps for startups, <br />
+          businesses, and large enterprises to help them in building a strong online presence<br />
+          and thrive in the digital age.
+        </p>
+
+        <button type="button" class="px-16 py-[12px] mx-auto flex items-center text-center bg-pinky text-white border-2 border-pinky font-semibold transition-all hover:bg-transparent hover:border-pinky">Let's Talk</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="maincontainer grid grid-cols-1 lg:grid-cols-2 gap-3 py-16">
+        <div class="pr-[32px]">
+          <h2 class="text-3xl font-bold"><span class="text-pinky"> Empowering Digital Dreams:</span> Our Commitment to Crafting Exceptional Designs and Solutions for a Connected World.</h2>
+          <p class="mt-[22px] mb-[36px] para-color leading-[35px]">At our design and development agency, we are dedicated to empowering your digital dreams. Our mission is to create exceptional designs and innovative solutions that resonate with your audience, drive growth, and leave a lasting impact. We blend creativity and technology to build digital experiences that bridge the gap between vision and reality. We believe in collaboration, quality, and exceeding expectations. With us, you'll find a partner committed to transforming your ideas into digital success stories and helping you thrive in today's interconnected world.</p>
+          <button type="button" class="px-16 py-[12px] bg-transparent text-black side-border font-semibold transition-all hover:bg-pinky hover:text-white hover:border-pinky">Let's Talk</button>
+        </div>
+        <div class="grid gap-4 xs:grid-cols-2 2xl:gap-6 maxlg:mt-12">
+          <div class="shadow-card xy-center">
+            <h2 class="text-[45px] font-bold text-pinky">60+</h2>
+            <span class="text-lg font-medium leading-7 text-secondary xs:text-base sm:text-lg">Clients</span>
+          </div>
+          <div class="shadow-card xy-center">
+            <h2 class="text-[45px] font-bold text-pinky">6</h2>
+            <span class="text-lg font-medium leading-7 text-secondary xs:text-base sm:text-lg">Years Experience</span>
+          </div>
+          <div class="shadow-card xy-center">
+            <h2 class="text-[45px] font-bold text-pinky">90+</h2>
+            <span class="text-lg font-medium leading-7 text-secondary xs:text-base sm:text-lg">Completed Projects</span>
+          </div>
+          <div class="shadow-card xy-center">
+            <h2 class="text-[45px] font-bold text-pinky">3</h2>
+            <span class="text-lg font-medium leading-7 text-secondary xs:text-base sm:text-lg">Achievements</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer mrque">
+        <div class="slick marquee">
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-1.png" alt="slide-1" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-2.png" alt="slide-2" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-3.png" alt="" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-4.png" alt="" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-5.png" alt="" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-6.png" alt="" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-1.png" alt="" />
+            </div>
+          </div>
+          <div class="inner">
+            <img src="./images/slide-5.png" alt="" />
+          </div>
+          <div class="inner">
+            <img src="./images/slide-6.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="relative py-14 lg:py-20">
+        <img src="./images/buildyourdream-4078f74d.png" alt="" class="absolute inset-0 -z-10 h-full w-full" />
+        <div class="maincontainer flex justify-between gap-10 text-white md:items-center maxmd:flex-col">
+          <div class="w-full max-w-[1020px]">
+            <h1 class="mb-3 text-3xl font-semibold">
+              " Let's Build Your Dream Website "
+              <span class="text-pinky">Together!</span>
+            </h1>
+            <p class="leading-7">"Whether you need a website redesign, development from scratch, or any other web-related services, team WODWES got you covered. Our experienced team of designers and developers will work closely with you to create a website that truly represents your vision and engages your target audience."</p>
+          </div>
+          <!-- <button type="button" class="px-12 py-[12px]  bg-transparent  text-white side-border font-semibold transition-all hover:bg-pinky hover:text-white  hover:border-pinky">Let's Talk</button> -->
+          <a href="" class="custom-btn bg-transparent text-secondary hover:bg-pinky hover:text-white !text-white">Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="py-14 lg:py-20">
+        <div class="maincontainer">
+          <div class="max-w-[896px]">
+            <h2 class="mb-3 text-3xl font-bold">
+              "Web Design and Development "
+              <span class="text-pinky"> Outsourcing Company </span>
+            </h2>
+            <p class="text-lg leading-9">Your Reliable Partner for Digital Excellence - Delivering Outstanding Web Solutions with Precision and Expertise, On Time, Every Time.</p>
+          </div>
+
+          <div class="gridlayout mx-auto mt-14 grid sm:grid-cols-2 md:w-[90%] xl:grid-cols-3">
+            <div class="w-full border-b border-r border-[#D5D5D5]">
+              <div class="card h-full">
+                <img src="./images/card-1.png" alt="" class="h-8 w-8" />
+                <h3 class="mb-4 mt-3 flex h-14 items-center text-lg font-bold leading-[26px] text-secondary xs:text-2xl md:text-xl">Resource as a service</h3>
+                <p class="mb-4 text-primary">Unlock unparalleled talent and expertise with our Resource-as-a-Service. Access top-notch designers and developers to enhance your projects and accelerate growth.</p>
+              </div>
+            </div>
+            <div class="w-full border-b border-r border-[#D5D5D5]">
+              <div class="card h-full">
+                <img src="./images/card-1.png" alt="" class="h-8 w-8" />
+                <h3 class="mb-4 mt-3 flex h-14 items-center text-lg font-bold leading-[26px] text-secondary xs:text-2xl md:text-xl">Front-End Development</h3>
+                <p class="mb-4 text-primary">Elevate user experiences with our Front-End Development expertise. Craft visually stunning, responsive, and intuitive interfaces that captivate and engage your audience.</p>
+              </div>
+            </div>
+            <div class="w-full border-b border-r border-[#D5D5D5]">
+              <div class="card h-full">
+                <img src="./images/card-1.png" alt="" class="h-8 w-8" />
+                <h3 class="mb-4 mt-3 flex h-14 items-center text-lg font-bold leading-[26px] text-secondary xs:text-2xl md:text-xl">Web Application Development</h3>
+                <p class="mb-4 text-primary">Empower your business with our Web Application Development services. We turn ideas into robust, scalable, and user-friendly web solutions that drive success.</p>
+              </div>
+            </div>
+            <div class="w-full border-b border-r border-[#D5D5D5]">
+              <div class="card h-full">
+                <img src="./images/card-1.png" alt="" class="h-8 w-8" />
+                <h3 class="mb-4 mt-3 flex h-14 items-center text-lg font-bold leading-[26px] text-secondary xs:text-2xl md:text-xl">Full-Stack Development</h3>
+                <p class="mb-4 text-primary">Experience end-to-end digital excellence with our Full-Stack Development services. We seamlessly blend front-end finesse with back-end robustness to bring your vision to life.</p>
+              </div>
+            </div>
+            <div class="w-full border-b border-r border-[#D5D5D5]">
+              <div class="card h-full">
+                <img src="./images/card-1.png" alt="" class="h-8 w-8" />
+                <h3 class="mb-4 mt-3 flex h-14 items-center text-lg font-bold leading-[26px] text-secondary xs:text-2xl md:text-xl">CMS Development</h3>
+                <p class="mb-4 text-primary">Empower your business with our Web Application Development services. We turn ideas into robust, scalable, and user-friendly web solutions that drive success.</p>
+              </div>
+            </div>
+            <div class="w-full border-b border-r border-[#D5D5D5]">
+              <div class="card h-full">
+                <img src="./images/card-1.png" alt="" class="h-8 w-8" />
+                <h3 class="mb-4 mt-3 flex h-14 items-center text-lg font-bold leading-[26px] text-secondary xs:text-2xl md:text-xl">DevOps</h3>
+                <p class="mb-4 text-primary">Streamline development pipelines and enhance project efficiency with our DevOps solutions. Achieve seamless collaboration, rapid deployments, and optimal performance for your digital projects.</p>
+              </div>
+            </div>
+            <div class="w-full border-b border-r border-[#D5D5D5]">
+              <div class="card h-full">
+                <img src="./images/card-1.png" alt="" class="h-8 w-8" />
+                <h3 class="mb-4 mt-3 flex h-14 items-center text-lg font-bold leading-[26px] text-secondary xs:text-2xl md:text-xl">Software Development</h3>
+                <p class="mb-4 text-primary">Transform ideas into powerful solutions. Our Software Development services harness innovation and precision to create robust, scalable, and tailored software solutions for your business.</p>
+              </div>
+            </div>
+            <div class="w-full border-b border-r border-[#D5D5D5]">
+              <div class="card h-full">
+                <img src="./images/card-1.png" alt="" class="h-8 w-8" />
+                <h3 class="mb-4 mt-3 flex h-14 items-center text-lg font-bold leading-[26px] text-secondary xs:text-2xl md:text-xl">Quality Assurance & Testing</h3>
+                <p class="mb-4 text-primary">Ensure flawless performance and user satisfaction with our Quality Assurance & Testing services. We meticulously scrutinize every detail to deliver excellence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative py-14 lg:py-20 mb-16">
+        <img src="./images/buildyourdream-4078f74d.png" alt="" class="absolute inset-0 -z-10 h-full w-full" />
+        <div class="maincontainer flex justify-between gap-10 text-white md:items-center maxmd:flex-col">
+          <div class="w-full max-w-[1020px]">
+            <h1 class="mb-3 text-3xl font-semibold">
+              <span class="text-pinky">Hire Remote & Project </span>
+              Based Developers for Wodwes
+            </h1>
+            <p class="leading-7">Power up your projects with WODWES remote developers. Boost productivity and achieve exceptional results. Get started today to unlock your project's full potential!</p>
+          </div>
+          <!-- <button type="button" class="px-12 py-[12px]  bg-transparent  text-white side-border font-semibold transition-all hover:bg-pinky hover:text-white  hover:border-pinky">Let's Talk</button> -->
+          <a href="" class="custom-btn bg-transparent text-secondary hover:bg-pinky hover:text-white !text-white">Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="maincontainer justify-between gap-10 pb-20 lg:flex">
+        <div class="lg:sticky lg:top-32 h-full lg:max-w-[500px] 2xl:max-w-[543px]">
+          <h2 class="text-4xl font-bold leading-tight text-secondary">
+            What you get with
+            <span class="text-pinky">WODWES</span>
+            product and service design
+          </h2>
+          <p class="my-5 text-sm leading-8 text-primary">With WODWES product and service design, you get a transformative experience that marries innovation, aesthetics, and functionality. We craft solutions that resonate with your audience, fuel growth, and elevate your brand. Expect meticulous attention to detail, seamless user experiences, and a creative spark that sets you apart in today's competitive landscape. We're your partners in turning ideas into tangible success stories</p>
+          <button type="button" class="px-12 py-[12px] bg-transparent text-primary side-border font-semibold duration-300 hover:bg-pinky hover:text-white hover:border-pinky">Get Started</button>
+        </div>
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:w-1/2 lg:grid-cols-1 xl:grid-cols-2 2xl:max-w-[800px] 2xl:gap-7 3xl:max-w-[840px]">
+          <div class="space-y-4 2xl:space-y-5">
+            <div class="productcard">
+              <img src="./images/card-1.png " alt="" class="w-9 h-9" />
+              <h3 class="my-5 text-lg font-bold">Product Design</h3>
+              <p class="text-sm leading-6 2xl:leading-8">Elevate your product's appeal and functionality with our design expertise. We create innovative and user-centric solutions that captivate and deliver results.</p>
+            </div>
+            <div class="productcard">
+              <img src="./images/card-1.png " alt="" class="w-9 h-9" />
+              <h3 class="my-5 text-lg font-bold">Business Design</h3>
+              <p class="text-sm leading-6 2xl:leading-8">Transform your business with our expert design services. We craft captivating designs that drive success, leaving a lasting impact on your brand.</p>
+            </div>
+          </div>
+          <div class="mt-5 space-y-4 2xl:space-y-5">
+            <div class="productcard">
+              <img src="./images/card-1.png " alt="" class="w-9 h-9" />
+              <h3 class="my-5 text-lg font-bold">Service Design</h3>
+              <p class="text-sm leading-6 2xl:leading-8">Elevate user experiences with our service design expertise. We blend creativity and strategy to craft seamless, user-centric solutions that drive success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative py-20">
+        <img src="./images/Banner-22ae39b2.png" alt="" class="absolute inset-0 -z-10 h-full w-full" />
+        <div class="maincontainer text-white">
+          <div class="flex justify-between gap-10 text-white md:items-center maxmd:flex-col">
+            <div class="lg:max-w-[540px] 3xl:max-w-[700px]">
+              <h2 class="text-2xl font-bold"><span class="text-pinky">Product</span> We Develop</h2>
+              <p class="mt-5 max-w-[572px]">Hire testers and QA experts to perform end-to-end testing of your existing product, website, or software solution</p>
+            </div>
+            <!-- <button type="button" class="px-12 py-[12px] bg-transparent text-white border-2 border-pinky font-semibold duration-300 hover:bg-pinky hover:text-white hover:border-pinky">Give it a Try?</button> -->
+            <a href="" class="custom-btn bg-transparent text-white hover:bg-pinky hover:text-white">Give it a Try</a>
+          </div>
+        </div>
+        <div class="mt-10 grid w-full gap-10 md:grid-cols-2 md:gap-3">
+          <img src="./images/tv-1.png" alt="cvmakerhub" class="order-2 h-full w-full rounded-xl md:order-none" />
+          <img src="./images/tv-2.png" alt="cvmakerhub" class="h-full w-full rounded-xl" />
+        </div>
+      </div>
+
+      <div class="maincontainer py-20">
+        <h2 class="text-3xl font-bold">
+          <span class="text-pinky">Technologies</span>
+          We Use
+        </h2>
+        <p class="text-primary mt-4 w-full max-w-[896px] text-lg">We leverage cutting-edge technologies to create innovative solutions, ensuring your digital projects remain at the forefront of industry standards.</p>
+        <div class="m-auto max-w-[950px]">
+          <div class="flex items-center my-10 justify-between gap-4 md:my-14">
+            <button type="button" class="clickbtn text-sm font-semibold duration-300 hover:text-pinky sm:text-lg lg:text-xl active" data-tab="1">Fronten Technologies</button>
+            <button type="button" class="clickbtn text-sm font-semibold duration-300 hover:text-pinky sm:text-lg lg:text-xl" data-tab="2">Backend Technologies</button>
+            <button type="button" class="clickbtn text-sm font-semibold duration-300 hover:text-pinky sm:text-lg lg:text-xl" data-tab="3">CMS Technologies</button>
+          </div>
+          <div>
+            <div id="tab1" class="mx-auto flex max-w-[700px] flex-wrap justify-center gap-10 md:gap-x-20 md:gap-y-14 lg:max-w-[854px] lg:gap-x-40 lg:gap-y-20">
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/first-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/second-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/third-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/fourth-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/fifth-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/sixth-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/seventh-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+            </div>
+
+            <div id="tab2" class="mx-auto flex max-w-[700px] flex-wrap justify-center gap-10 md:gap-x-20 md:gap-y-14 lg:max-w-[854px] lg:gap-x-40 lg:gap-y-20 hidden">
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/1-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/2-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/3-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/4-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/5-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/6-tag.svg" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/third-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+            </div>
+
+            <div id="tab3" class="mx-auto flex max-w-[700px] flex-wrap justify-center gap-10 md:gap-x-20 md:gap-y-14 lg:max-w-[854px] lg:gap-x-40 lg:gap-y-20 hidden">
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/sixth-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/tag1.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/tag2.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/tag3.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/tag4.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/tag5.png" alt="" class="h-full w-full object-contain" />
+              </div>
+              <div class="techuse flex justify-between items-center">
+                <img src="./images/seventh-tag.png" alt="" class="h-full w-full object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative py-20">
+        <img src="./images/chooseusbg-1b15bf14.png" alt="" class="absolute inset-0 -z-10 w-full h-full" />
+        <div class="maincontainer md:flex justify-between gap-10 text-white maxlg:flex-col">
+          <div class="md:sticky top-32 h-full w-full lg:max-w-[505px]">
+            <h2 class="text-4xl font-bold">Why Choose <span class="text-pinky">WODWES</span> for Website Design and Development Services?</h2>
+            <p class="para mt-5 text-lg text-white">
+              We’re not a typical development agency — We’re <br class="maxlg:hidden" />your technology partner striving <br class="maxlg:hidden" />
+              to achieve your specific goals.
+            </p>
+          </div>
+          <div class="w-full space-y-10 lg:mt-24 lg:max-w-[699px] lg:space-y-20 mt-6">
+            <div>
+              <img src="./images/red1.png" alt="" class="h-9 w-9 object-contain" />
+              <h3 class="my-2 font-bold lg:text-[28px]">Pool of Experience and Expertise</h3>
+              <p class="text-white leading-9">With a diverse team of professionals with expertise in various areas of web development, including front-end and back-end development, database design, user interface design, and e-commerce solutions, we can handle all aspects of your web development project efficiently and effectively.</p>
+            </div>
+            <div>
+              <img src="./images/red2.png" alt="" class="h-9 w-9 object-contain" />
+              <h3 class="my-2 font-bold lg:text-[28px]">Transparency and Quality</h3>
+              <p class="text-white leading-9">We have an in-house rigorous quality assurance process in place to ensure that our development solutions are of the highest quality. We conduct thorough testing and debugging to identify and fix any issues before delivering the final product to you.</p>
+            </div>
+            <div>
+              <img src="./images/red3.png" alt="" class="h-9 w-9 object-contain" />
+              <h3 class="my-2 font-bold lg:text-[28px]">Flexible Hiring Models</h3>
+              <p class="text-white leading-9">We have flexible hiring models for our partners. Whether you need to hire on an hourly basis, a project basis, or a dedicated team for a project, team WODWES got you covered with the flexibility and efficiency.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer grid gap-x-8 lg:grid-cols-2 pt-16 mb-10">
+        <img src="./images/YourDevelopmentPartner-9a89547a.png" alt="Your Development Partner image" class="max-h-[625px] w-full rounded-[10px] object-cover lg:sticky top-32" />
+        <div class="mt-4 md:mt-8 lg:my-4">
+          <h2 class="text-3xl leading-9 font-bold">Your Development <span class="text-pinky">Partner!</span></h2>
+          <p class="mt-1 leading-9 opacity-100 text-primary">We love hearing about how our work has helped businesses succeed and how WODWES became their go-to development team. Don't just take our word for it - read what our satisfied clients have to say!</p>
+          <div class="mt-4">
+            <img src="./images/card-1.png" alt="" class="w-9 h-9 object-contain" />
+            <h3 class="text-xl leading-7 font-semibold text-black mt-4">Developing feature-enriched web and software solutions for businesses</h3>
+            <p class="mt-1 leading-9 opacity-100 text-primary">At WODWES, we understand that technology is constantly evolving, and we're committed to staying ahead of the curve. Whether you need a simple website or a complex web application, we have the expertise and experience to deliver innovative solutions that help you achieve your business goals.</p>
+          </div>
+          <div class="mt-4">
+            <img src="./images/card-1.png" alt="" class="w-9 h-9 object-contain" />
+            <h3 class="text-xl leading-7 font-semibold text-black mt-4">Tailored development solutions to meet your business needs!</h3>
+            <p class="mt-1 leading-9 opacity-100 text-primary">Team WODWES believes that every business is unique, and that's why we offer tailored development solutions to meet your specific needs. We work closely with our clients to identify their unique business requirements and develop customized solutions that help them achieve their goals.</p>
+          </div>
+          <button type="button" class="px-12 py-[12px] bg-transparent mt-4 text-black border-2 border-pinky font-semibold duration-300 hover:bg-pinky hover:text-white hover:border-pinky">Get Started</button>
+        </div>
+      </div>
+
+      <div class="getintouch">
+        <div class="flex h-full w-full gap-10 justify-between max-lg:flex-col">
+          <div class="max:top-0 h-full w-full max-w-md lg:sticky top-0 lg:ml-[10%] lg:pt-40">
+            <h2 class="mb-5 text-3xl font-bold md:text-4xl xl:text-5xl">Get in Touch</h2>
+            <p>We love hearing about how our work has helped businesses succeed and how WODWES became their go-to development team.</p>
+          </div>
+          <div class="formcontainer">
+            <form>
+              <div class="grid max-w-2xl grid-cols-2 gap-10">
+                <input type="text" placeholder="Enter you name" class="col-span-2 w-full border-b border-[#9C9C9C] bg-transparent pb-1 text-[#9C9C9C] outline-none placeholder:text-[#9C9C9C]" />
+                <input type="email" placeholder="Email" class="w-full border-b border-[#9C9C9C] bg-transparent pb-1 text-[#9C9C9C] outline-none placeholder:text-[#9C9C9C] maxcosm:col-span-2" />
+                <input type="tel" placeholder="Phone Number" class="w-full border-b border-[#9C9C9C] bg-transparent pb-1 text-[#9C9C9C] outline-none placeholder:text-[#9C9C9C] maxcosm:col-span-2" />
+                <textarea rows="10" placeholder="Your message here..." class="col-span-2 w-full rounded-lg border border-[#9C9C9C] bg-transparent p-2 text-[#9C9C9C] outline-none placeholder:text-[#9C9C9C]"></textarea>
+
+                <div>
+                  <button type="button" class="px-12 py-[12px] bg-transparent mt-4 text-white border-2 border-pinky font-semibold duration-300 hover:bg-pinky hover:text-white hover:border-pinky">Get Started</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer lg:my-1" style="margin-top: 48px; margin-bottom: 48px">
+        <h2 class="text-left text-2xl font-bold lg:text-3xl">Frequently Asked <span class="text-pinky">Questions!</span></h2>
+        <p class="mb-7 mt-4 text-left text-base font-normal text-primary">We love hearing about how our work has helped businesses succeed and how WODWES became</p>
+        <div class="mx-auto main-div-accordian md:max-w-[1000px]">
+          <div class="mx-auto border-t border-x-gray-200 first:!border-t-0">
+            <button type="button" class="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm accordian-btn">
+              <span class="text-left text-base font-semibold text-primary md:text-lg">What is Wodwes?</span>
+              <span class="h-6 w-6 flex justify-center items-center text-pinky border-2 border-pinky rounded-full"><i class="fa-solid fa-plus plus-icon"></i></span>
+            </button>
+            <div class="duration-300 content hidden">
+              <p class="pb-4 text-start leading-6 sm:text-base maxsm:text-sm">WODWES (Women-Driven Web Solutions) is a well-recognized US-based agency offering a wide range of services including website design and development, CMS development, ERP development, custom Ecommerce development, and UI/UX design. We house a professional team of designers, developers, consultants, and engineers, who are dedicatedly available to help businesses in achieving digital goals.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto md:max-w-[1000px] main-div-accordian">
+          <div class="mx-auto border-t border-x-gray-200">
+            <button type="button" class="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm accordian-btn">
+              <span class="text-left text-base font-semibold text-primary md:text-lg">How long does it take to develop a website or web application?</span>
+              <span class="h-6 w-6 text-pinky border-2 border-pinky flex justify-center items-center rounded-full"><i class="fa-solid fa-plus plus-icon"></i></span>
+            </button>
+            <div class="duration-300 content hidden">
+              <p class="pb-4 text-start leading-6 sm:text-base maxsm:text-sm">The time it takes to develop a website or web application varies depending on the complexity of the project, the number of features and pages, and the level of customization required. We typically provide an estimated timeline during the discovery phase based on our assessment of the project requirements. To get a free quote, email us at sales@wodwes.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto md:max-w-[1000px] main-div-accordian">
+          <div class="mx-auto border-t border-x-gray-200">
+            <button type="button" class="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm accordian-btn">
+              <span class="text-left text-base font-semibold text-primary md:text-lg">What programming languages and frameworks do you use? </span>
+              <span class="h-6 w-6 text-pinky flex justify-center items-center border-2 border-pinky rounded-full"><i class="fa-solid fa-plus plus-icon"></i></span>
+            </button>
+            <div class="duration-300 content hidden">
+              <p class="pb-4 text-start leading-6 sm:text-base maxsm:text-sm">We use a variety of programming languages and frameworks depending on the project requirements. Some of the languages and frameworks we commonly use include PHP, JavaScript, React, Angular, Vue, Node.js, Python, and Django.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto md:max-w-[1000px] main-div-accordian">
+          <div class="mx-auto border-t border-x-gray-200">
+            <button type="button" class="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm accordian-btn">
+              <span class="text-left text-base font-semibold text-primary md:text-lg">Do you provide website hosting and maintenance services?</span>
+              <span class="h-6 w-6 text-pinky flex justify-center items-center border-2 border-pinky rounded-full"><i class="fa-solid fa-plus plus-icon"></i></span>
+            </button>
+            <div class="duration-300 content hidden">
+              <p class="pb-4 text-start leading-6 sm:text-base maxsm:text-sm">Yes, we offer website hosting and maintenance services to ensure that our client's websites are secure, up-to-date, and performing optimally. Our hosting services include server maintenance, security updates, and backups. Our maintenance services include content updates, bug fixes, and feature enhancements.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto md:max-w-[1000px] main-div-accordian">
+          <div class="mx-auto border-t border-x-gray-200">
+            <button type="button" class="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm accordian-btn">
+              <span class="text-left text-base font-semibold text-primary md:text-lg">What is your web development process?</span>
+              <span class="h-6 w-6 text-pinky flex justify-center items-center border-2 border-pinky rounded-full"><i class="fa-solid fa-plus plus-icon"></i></span>
+            </button>
+            <div class="duration-300 content hidden">
+              <p class="pb-4 text-start leading-6 sm:text-base maxsm:text-sm">Our web development process typically involves the following steps: discovery, design, development, testing, and launch. During the discovery phase, we gather requirements, define the project scope, and create a project plan. The design phase involves creating wireframes, mockups, and visual designs. The development phase involves coding, integrating with third-party services, and setting up databases. The testing phase involves conducting functional testing, usability testing, and performance testing. Finally, we launch the website or application and provide ongoing support. To get started with our web development services, please email us at sales@wodwes.com.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-primary">
+      <div class="maincontainer grid py-12 xl:grid-cols-2">
+        <div>
+          <h3 class="text-lg font-bold text-pinky">Services</h3>
+
+          <ul class="mt-2 sm:columns-2">
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Laravel E-commerce Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointerleading-8 text-white duration-200 hover:text-pinky">PHP E-commerce Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">WordPress E-commerce Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Shopify Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">React Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Vue.js Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Angular Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">PHP Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">CodeIgniter Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Laravel Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">MERN Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">WordPress Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Magento Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">BigCommerce Development </a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Drupal Development </a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Joomla Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Social Media Creatives</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Website UI/UX</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Mobile App UI/UX</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sec-2 grid sm:grid-cols-2 2xl:grid-cols-4">
+          <div class="quick-links mt-4">
+            <h3 class="text-lg font-bold text-pinky cursor-pointer">Quick Links</h3>
+            <ul class="mt-2">
+              <li class="text-base font-normal leading-8 text-white cursor-pointer duration-300 hover:text-pinky">Contact Us</li>
+            </ul>
+          </div>
+          <div class="Contact-US mt-4">
+            <h3 class="text-lg font-bold text-pinky">Contact US</h3>
+            <ul class="mt-2">
+              <li class="text-base font-normal leading-8 text-white duration-200 hover:text-pinky cursor-pointer">Info@wodwes.com</li>
+              <li class="text-base font-normal leading-8 text-white duration-200 hover:text-pinky cursor-pointer">sales@wodwes.com</li>
+              <li class="text-base font-normal leading-8 text-white duration-200 hover:text-pinky cursor-pointer">+1 917 000 3956</li>
+            </ul>
+          </div>
+
+          <div class="NEWSLETTER mt-4 2xl:col-span-2 2xl:pl-6">
+            <h3 class="text-lg font-bold text-pinky">NEWSLETTER</h3>
+            <input type="text" class="mt-2 w-full py-3.5 pl-4 text-base outline-none" placeholder="Enter your email address" />
+            <a href="" class="custom-btn2 bg-pinky hover:bg-transparent mt-3 text-white hover:!text-pinky">Get Started</a>
+          </div>
+
+          <div class="follow-us ml-auto mt-6 sm:pt-14 2xl:col-span-4">
+            <h3 class="text-right text-lg font-bold text-pinky">Follow Us</h3>
+            <div class="mt-4 flex gap-x-4">
+              <span class="flex justify-center items-center h-11 w-11 text-xl text-white border border-white rounded-full hover:text-pinky hover:border-pinky duration-300 cursor-pointer"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="flex justify-center items-center h-11 w-11 text-xl text-white border border-white rounded-full cursor-pointer hover:text-pinky hover:border-pinky duration-300"><i class="fa-brands fa-linkedin-in"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="py-4 text-center text-sm text-[rgb(170_170_171/1)]">© Copyright 2023 All right reserved by Wodwes</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

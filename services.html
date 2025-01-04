@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/output.css" />
+  </head>
+  <body>
+    <div class="bg-primary flex flex-wrap items-center justify-center gap-y-2 gap-x-0 xs:gap-x-6 md:gap-14 py-2">
+      <p class="text-white text-sm"><span class="border-b hover:text-pink-600 hover:cursor-pointer transition hover:border-b-pink-600">Get a Quote</span> Today to claim $200 free credit.</p>
+      <p class="text-white text-sm flex items-center gap-2">
+        <span class="text-xl"><i class="fa-solid fa-phone"></i> </span>
+        <span class="">+ 92 306 1070 678</span>
+      </p>
+      <p class="text-white text-sm flex items-center gap-2">
+        <span class="text-xl"><i class="fa-solid fa-envelope"></i> </span>
+        <span class="">sales@wodwes.com</span>
+      </p>
+    </div>
+    <nav class="sticky top-0 z-9999 bg-white duration-300 shadow-lg">
+      <div class="maincontainer flex items-center justify-between bg-white py-4 lg:relative lg:z-40">
+        <img src="./images/Wodwes_logo-f91da705.png" alt="" class="w-32 coxs:w-36 md:w-40 xl:w-48 cursor-pointer" />
+        <div class="flex justify-center items-center gap-x-12 nav-ul-div">
+          <ul class="flex justify-between items-center gap-x-8 max-lg:hidden nav-ul">
+            <li class="weight cursor-pointer text-pinky">Home</li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky services" data-toshow="1">
+              Services <span class="text-gray-400"> <i class="fa-solid fa-angle-down arrow"></i></span>
+            </li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky services" data-toshow="2">
+              Industries <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span>
+            </li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky services" data-toshow="3">
+              Technologies <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span>
+            </li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky">Portfolio</li>
+          </ul>
+          <button type="button" class="px-6 py-[15px] pinky text-white border-2 border-pinky font-semibold duration-300 max-lg:hidden hover:bg-white hover:text-black hover:border-pinky">Contact us</button>
+        </div>
+
+        <div class="justify-center items-center gap-x-6 hidden max-lg:flex">
+          <button type="button" class="px-5 py-[13px] pinky text-white border font-semibold transition-all hover:bg-white hover:text-black hover:border-pinky">Contact us</button>
+          <!-- Hamburger -->
+          <span id="hamburger" class="text-4xl cursor-pointer bars"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </div>
+
+      <!-- after 992 -->
+
+      <div class="absolute top-[85px] scale-0 overflow-auto h-screen pb-40 z-50 left-0 right-0 duration-300 bg-white bar-content" id="mobNav">
+        <ul class="nav-ul maincontainer">
+          <li class="weight cursor-pointer py-3 text-pinky">Home</li>
+          <li class="weight transition-all industries" data-todown="1">
+            <span class="cursor-pointer hover:text-pinky py-3 flex items-center justify-between"
+              >Services <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span
+            ></span>
+            <div class="flex hidden flex-col justify-center items-start gap-6 ml-3 pt-[1rem] drop-menu" id="todown-1">
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-1.png" alt="" class="w-6 h-6" />
+                  <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">E-commerce Development</h3>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel E-commerce Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP E-commerce Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress E-commerce Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Shopify Development</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-2.png" alt="" class="w-6 h-6" />
+                  <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Front-end Development</h3>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Vue.js Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Development</a>
+                </li>
+              </ul>
+
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-3.png" alt="" class="w-6 h-6" />
+                  <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Software Development</h3>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP Software Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">CodeIgniter Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel Software Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MERN Software Development</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-4.png" alt="" class="w-6 h-6" />
+                  <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">CMS Development</h3>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Magento Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Drupal Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">BigCommerce Development</a>
+                </li>
+                <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Joomla Development</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="weight cursor-pointer py-3 transition-all industries" data-todown="2">
+            <span class="hover:text-pinky flex items-center justify-between">
+              Industries <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span
+            ></span>
+            <div class="flex hidden flex-col justify-center items-start gap-6 ml-3 pt-[1rem] drop-menu" id="todown-2">
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Healthcare</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Travel</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Insurance</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Manufacturing</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Transportation and Logistics</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">EdTech</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Enterprise</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Media and Entertainment</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Telecom</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="weight py-3 transition-all industries" data-todown="3">
+            <span class="cursor-pointer hover:text-pinky flex items-center justify-between">
+              Technologies <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span
+            ></span>
+            <div class="flex hidden flex-col justify-center items-start gap-6 ml-3 pt-[1rem] drop-menu" id="todown-3">
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">IOS Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Andriod Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Node Js Developers</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Blackchain Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> TypeScript Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MEAN Stack Developers</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mern Stack Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Python Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mobile Application Developers</a>
+                </li>
+              </ul>
+              <ul class="space-y-4 3xl:space-y-7">
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Wordpress Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Js Developers</a>
+                </li>
+                <li class="flex items-center gap-1">
+                  <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+                  <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Js Developers</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="weight cursor-pointer py-3 transition-all hover:text-pinky">Portfolio</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- megamenu -->
+
+    <!-- services -->
+
+    <div class="custom_space flex lg:shadow-lg left-72 right-0 xl:top-[96px] megamenu maincontainer hidden" id="toshow-1">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-1.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">E-commerce Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="page-2/index.html" class="megamenu-item relative duration-200 hover:text-pinky">Laravel E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="page-2/index.html" class="megamenu-item relative duration-200 hover:text-pinky">PHP E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="page-2/index.html" class="megamenu-item relative duration-200 hover:text-pinky">WordPress E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="page-2/index.html" class="megamenu-item relative duration-200 hover:text-pinky">Shopify Development</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-2.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Front-end Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Vue.js Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Development</a>
+        </li>
+      </ul>
+
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-3.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Software Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP Software Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">CodeIgniter Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel Software Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MERN Software Development</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-4.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">CMS Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Magento Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Drupal Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">BigCommerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Joomla Development</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- industries -->
+
+    <div class="custom_space flex lg:shadow-lg left-72 right-0 xl:top-[96px] megamenu maincontainer hidden" id="toshow-2">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Healthcare</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Travel</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Insurance</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Manufacturing</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Transportation and Logistics</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">EdTech</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Enterprise</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Media and Entertainment</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Telecom</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- technologies -->
+    <div class="custom_space flex lg:shadow-lg left-72 right-0 xl:top-[96px] megamenu maincontainer hidden" id="toshow-3">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">IOS Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Andriod Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Node Js Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Blackchain Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> TypeScript Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MEAN Stack Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mern Stack Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Python Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mobile Application Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Wordpress Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Js Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Js Developers</a>
+        </li>
+      </ul>
+    </div>
+
+    <header class="relative py-16 md:pb-[77px] md:pt-[109px]">
+      <img src="./images/Banner-22ae39b2.png" alt="" class="absolute inset-0 -z-30 w-full h-full" />
+
+      <div class="maincontainer grid gap-10 lg:grid-cols-2">
+        <div>
+          <h1 class="text-3xl font-bold text-white md:text-4xl md:leading-[60px] lg:text-5xl xl:text-6xl">
+            <span class="text-pinky">React</span>
+            Development Services
+          </h1>
+          <p class="my-5 w-full max-w-[637px] leading-8 text-[#A4A6A6] lg:my-11 xl:text-lg">As a leading React development company, our specialized React developers build scalable and robust user interfaces, delivering an unparalleled user experience. We develop Dev solutions of robust functionality and phenomenal visual appeal, building a competitive edge with our Front end and back-end development expertise, complemented by vetted awareness of critical businesses’ needs. Leveraging the advanced-featured programming language, we transform businesses with intuitive, and dynamic React-built solutions to meet their tangible business objectives.</p>
+          <!-- <button type="button" class="px-16 py-[12px] mx-auto text-center bg-transparent text-white border-2 border-pinky font-semibold transition-all hover:bg-pinky hover:border-pinky">Get Started</button> -->
+          <a href="" class="custom-btn bg-transparent text-secondary hover:bg-pinky hover:text-white !text-white">Get Started</a>
+        </div>
+
+        <div class="text-white">
+          <div class="relative ml-auto w-full max-w-[687px] rounded-xl bg-[rgba(255,255,255,0.2)] px-4 py-12 sm:px-8 xl:py-[60px]">
+            <h3 class="text-2xl font-semibold text-white xl:text-3xl">Lets discuss your project</h3>
+            <p class="mb-5 mt-3 text-base text-black xl:mb-10">Submit a request and we‘ll get in touch within a day</p>
+            <form>
+              <div class="space-y-5">
+                <input type="text" placeholder="Enter your name " class="w-full rounded-lg bg-[rgba(246,249,255,0.50)] px-4 py-5 text-[rgba(26,26,26,0.40)] placeholder:text-[rgba(26,26,26,0.40)]" required />
+                <input type="email" placeholder="Enter your email " class="w-full rounded-lg bg-[rgba(246,249,255,0.50)] px-4 py-5 text-[rgba(26,26,26,0.40)] placeholder:text-[rgba(26,26,26,0.40)]" required />
+                <input type="tel" placeholder="Enter your phone number  " class="w-full rounded-lg bg-[rgba(246,249,255,0.50)] px-4 py-5 text-[rgba(26,26,26,0.40)] placeholder:text-[rgba(26,26,26,0.40)]" required />
+                <input type="text" placeholder="About project " class="w-full rounded-lg bg-[rgba(246,249,255,0.50)] px-4 py-5 text-[rgba(26,26,26,0.40)] placeholder:text-[rgba(26,26,26,0.40)]" required />
+                <button type="submit" class="xy-center w-full bg-pinky p-5 text-sm font-semibold text-white">
+                  <span>Get Quote <i class="fa-solid fa-angles-right"></i></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="maincontainer mrque">
+        <div class="slick marquee">
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-1.png" alt="slide-1" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-2.png" alt="slide-2" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-3.png" alt="" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-4.png" alt="" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-5.png" alt="" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-6.png" alt="" />
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="inner">
+              <img src="./images/slide-1.png" alt="" />
+            </div>
+          </div>
+          <div class="inner">
+            <img src="./images/slide-5.png" alt="" />
+          </div>
+          <div class="inner">
+            <img src="./images/slide-6.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer pb-20 3xl:gap-52">
+        <div class="flex gap-10 3xl:gap-40 maxmd:flex-col">
+          <div class="w-full max-w-[522px]">
+            <h2 class="mb-7 text-3xl font-bold text-secondary">
+              <span class="text-pinky">WODWES</span>
+              for React Development Services?
+            </h2>
+            <a href="" class="custom-btn bg-transparent text-black hover:bg-pinky hover:text-white">Get Started</a>
+          </div>
+          <p class="w-full leading-7 text-secondary xl:text-lg xl:leading-9">WODWES has established itself to be a cutting-edge provider of React development solutions. Leveraging our collaborative work approach, we partner up with you to fully understand and analyze your business goals and needs to devise the right React development solution to digitally take your business to the path of growth.</p>
+        </div>
+
+        <div class="choose__cards">
+          <div class="border-b border-gray-400 p-5 md:border-r lg:border-b-0">
+            <div class="flex items-center gap-5">
+              <img src="./images/supreme-work-9ce64432.png" alt="" class="h-8 w-8 object-contain" />
+              <h3 class="text-lg font-bold leading-6 xs:text-xl xl:text-2xl">WordPress Website Maintenance</h3>
+            </div>
+            <p class="my-5 text-sm leading-7 text-secondary sm:my-7"></p>
+            <ul class="mb-4 ml-6 list-disc space-y-4 text-sm text-secondary">
+              <li>Store Configuration Services</li>
+              <li>Custom WordPress Development</li>
+              <li>WordPress Theme Customization</li>
+              <li>WordPress Plugin Integration</li>
+              <li>Custom Checkout Pages Services</li>
+            </ul>
+          </div>
+          <div class="border-b border-gray-400 p-5 md:border-r lg:border-b-0">
+            <div class="flex items-center gap-5">
+              <img src="./images/supreme-work-9ce64432.png" alt="" class="h-8 w-8 object-contain" />
+              <h3 class="text-lg font-bold leading-6 xs:text-xl xl:text-2xl">RWordPress Website Design</h3>
+            </div>
+            <p class="my-5 text-sm leading-7 text-secondary sm:my-7"></p>
+            <ul class="mb-4 ml-6 list-disc space-y-4 text-sm text-secondary">
+              <li>Custom WordPress Web Design</li>
+              <li>Responsive WordPress Site</li>
+              <li>WordPress Theme Customization</li>
+              <li>Fast-loading WordPress Services</li>
+              <li>Website Development Services</li>
+            </ul>
+          </div>
+          <div class="border-b border-gray-400 p-5 md:border-r lg:border-b-0">
+            <div class="flex items-center gap-5">
+              <img src="./images/supreme-work-9ce64432.png" alt="" class="h-8 w-8 object-contain" />
+              <h3 class="text-lg font-bold leading-6 xs:text-xl xl:text-2xl">WordPress Customized Development</h3>
+            </div>
+            <p class="my-5 text-sm leading-7 text-secondary sm:my-7"></p>
+            <ul class="mb-4 ml-6 list-disc space-y-4 text-sm text-secondary">
+              <li>WordPress Storefront Designs</li>
+              <li>WordPress Template Development</li>
+              <li>WordPress Web Development</li>
+              <li>WordPress Extension Development</li>
+              <li>WordPress Cross-Compatible UIs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer justify-between gap-10 pb-20 lg:flex">
+        <div class="h-full lg:sticky lg:top-32 lg:max-w-[500px] 2xl:max-w-[543px]">
+          <h2 class="text-4xl font-bold leading-tight text-secondary">OUR SERVICES</h2>
+          <a href="" class="custom-btn bg-transparent text-black hover:bg-pinky hover:text-white mt-5">Get Started</a>
+        </div>
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:w-1/2 lg:grid-cols-1 xl:grid-cols-2 2xl:max-w-[800px] 2xl:gap-7 3xl:max-w-[840px]">
+          <div class="space-y-4 2xl:space-y-5">
+            <div class="productcard">
+              <img src="./images/card-1.png " alt="" class="w-9 h-9" />
+              <h3 class="my-5 text-lg font-bold">WordPress Plugin Development Services</h3>
+              <p class="text-sm leading-6 2xl:leading-8">Enhance the functionality of your website with our WordPress Plugin Development services. With extended expertise in WordPress CMS, our developers can create WordPress plugins fromscratch tailored to your specific requirements. By implementing quality coding & security standards, we build reliable, secure, and high-performance modules for your website. We have developed hundreds of plugins for a wide range of industry verticals, including business, automotive, e-commerce, and education. So whether you want to upgrade your existing plugin or have customization needs, we got you covered.</p>
+            </div>
+            <div class="productcard">
+              <img src="./images/card-1.png " alt="" class="w-9 h-9" />
+              <h3 class="my-5 text-lg font-bold">WordPress Theme Development Services</h3>
+              <p class="text-sm leading-6 2xl:leading-8">With over years of experience, we render WordPress theme development services to build intuitive, attractive, and SEO-friendly themes for WordPress websites. Our team of WordPressdevelopers is well-versed in custom theme development and turns your ideas into fully-functional websites. We follow best practices and methodologies to make sure developed themes are responsive and compatible with multiple browsers and devices. At WODWES, we also provide WordPress theme customization, theme setup, installation, and maintenance services to clients all around the globe.</p>
+            </div>
+            <div class="productcard">
+              <img src="./images/card-1.png " alt="" class="w-9 h-9" />
+              <h3 class="my-5 text-lg font-bold">WordPress Web Design Services</h3>
+              <p class="text-sm leading-6 2xl:leading-8">As a WordPress expert company, WODWES provides full-cycle WordPress web design services to help clients establish a strong digital presence. Leveraging the powerful WordPress platform,we create performance-optimized website designs that convert. Our certified WordPress designers are well-equipped with the latest technologies, WordPress coding standards, and best SEO practices to help you get ranked on Google. We also provide seamless HTML to WordPress conversion services that fit your requirements well.</p>
+            </div>
+          </div>
+          <div class="mt-5 space-y-4 2xl:space-y-5">
+            <div class="productcard">
+              <img src="./images/card-1.png " alt="" class="w-9 h-9" />
+              <h3 class="my-5 text-lg font-bold">WordPress Theme Development Services</h3>
+              <p class="text-sm leading-6 2xl:leading-8">With over years of experience, we render WordPress theme development services to build intuitive, attractive, and SEO-friendly themes for WordPress websites. Our team of WordPressdevelopers is well-versed in custom theme development and turns your ideas into fully-functional websites. We follow best practices and methodologies to make sure developed themes are responsive and compatible with multiple browsers and devices. At WODWES, we also provide WordPress theme customization, theme setup, installation, and maintenance services to clients all around the globe.</p>
+            </div>
+            <div class="productcard">
+              <img src="./images/card-1.png " alt="" class="w-9 h-9" />
+              <h3 class="my-5 text-lg font-bold">Headless WordPress With Vue Services</h3>
+              <p class="text-sm leading-6 2xl:leading-8">With over years of experience, we render WordPress theme development services to build intuitive, attractive, and SEO-friendly themes for WordPress websites. Our team of WordPressdevelopers is well-versed in custom theme development and turns your ideas into fully-functional websites. We follow best practices and methodologies to make sure developed themes are responsive and compatible with multiple browsers and devices. At WODWES, we also provide WordPress theme customization, theme setup, installation, and maintenance services to clients all around the globe.</p>
+            </div>
+            <div class="productcard">
+              <img src="./images/card-1.png " alt="" class="w-9 h-9" />
+              <h3 class="my-5 text-lg font-bold">WordPress Migration Services</h3>
+              <p class="text-sm leading-6 2xl:leading-8">Want to migrate your existing website to WordPress? We got you covered! At WODWES, we offer WordPress Migration services to help clients in seamless andhassle-free website migration to WordPress with “No Downtime.” Our WordPress experts make sure all your features are working efficiently in the migrated platform. Moreover, with our WordPress Multisite Installation Services, we help clients to manage a suite of sites easily and quickly. Hire WordPress specialists from WODWES to boost the performance of your website.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative py-20">
+        <img src="./images/buildyourdream-4078f74d.png" alt="" class="absolute inset-0 h-full w-full -z-20" />
+        <div class="maincontainer flex justify-between gap-10 text-white md:items-center maxmd:flex-col">
+          <div class="w-full max-w-[1020px]">
+            <h2 class="mb-3 text-3xl font-semibold">
+              Let's Build Your Dream Website
+              <span class="text-pinky">Together!</span>
+            </h2>
+            <p class="leading-7">Whether you need a website redesign, development from scratch, or any other web-related services, team WODWES got you covered. Our experienced team of designers and developers will work closely with you to create a website that truly represents your vision and engages your target audience.</p>
+          </div>
+          <a href="" class="custom-btn bg-transparent text-white hover:bg-pinky hover:text-white">Let's Talk</a>
+        </div>
+      </div>
+      <div class="mt-20 py-20 bg-[rgb(249_249_249/1)]">
+        <div class="maincontainer">
+          <div class="mb-14 flex gap-10 md:items-center md:justify-between maxmd:flex-col">
+            <h2 class="w-full max-w-[633px] text-3xl font-bold leading-10">Wodwes WordPress Services Are Your The Go-To Partner For Businesses Looking To Thrive In The Digital Landscape. Using Our Specialty, You Can Master E-Commerce Store Digital Growth.</h2>
+            <a href="" class="custom-btn bg-transparent text-black hover:bg-pinky hover:text-white">Let's Talk</a>
+          </div>
+
+          <div class="single-slider overflow-hidden">
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+            <div class="mx-1 h-full rounded-lg bg-primary p-4 text-[1rem] leading-6 w-1/3">
+              <img src="./images/versatile-domain.png" alt="" class="mb-1 w-5 h-5 object-contain" />
+              <h3 class="flex min-h-[41px] items-center text-left text-sm -tracking-0.32px text-white 3xl:text-base">Flexible Engagement Models</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer pb-10 pt-20 md:py-20">
+        <h2 class="text-left text-2xl font-bold lg:text-3xl">
+          Our Happy
+          <span class="text-pinky">Clients</span>
+        </h2>
+        <p class="mb-3 mt-4 text-left text-base font-normal text-primary">
+          We love hearing about how our work has helped businesses succeed and how WODWES became their go-to <br />
+          development team. Don't just take our word for it - read what our satisfied clients have to say!
+        </p>
+        <a href="" class="custom-btn bg-transparent text-black hover:bg-pinky hover:text-white">Get Started</a>
+      </div>
+      <div class="maincontainer mx-auto">
+        <div class="slider-for mx-auto w-11/12 overflow-hidden">
+          <div class="slider-item">
+            <div class="md:grid coxs:flex coxs:flex-col-reverse coxs:justify-center coxs:items-start grid-cols-2 gap-4">
+              <div class="h-full grid-cols-2 md:flex-col md:flex my-auto justify-center gap-10 text-left grid w-full coxs:gap-10">
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">Empowering Growth</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7.5%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">User Stisfaction</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">Technology Used</h3>
+                  <div class="mt-6 space-y-4 pl-[18px]">
+                    <div class="flex flex-wrap items-center gap-4">
+                      <img src="./images/wordpress.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/elementor.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/php.png" alt="" class="h-10 w-10 object-contain" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/thesmartpooch.png" alt="" class="h-[300px] w-full rounded-lg cursor-pointer object-cover object-top md:h-[480px]" />
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="md:grid coxs:flex coxs:flex-col-reverse coxs:justify-center coxs:items-start grid-cols-2 gap-4">
+              <div class="h-full grid-cols-2 md:flex-col md:flex my-auto justify-center gap-10 text-left grid w-full coxs:gap-10">
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">Empowering Growth</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7.5%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">User Stisfaction</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">Technology Used</h3>
+                  <div class="mt-6 space-y-4 pl-[18px]">
+                    <div class="flex flex-wrap items-center gap-4">
+                      <img src="./images/wordpress.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/elementor.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/php.png" alt="" class="h-10 w-10 object-contain" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/mnmanti-age.png" alt="" class="h-[300px] w-full rounded-lg cursor-pointer object-cover object-top md:h-[480px]" />
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="md:grid coxs:flex coxs:flex-col-reverse coxs:justify-center coxs:items-start grid-cols-2 gap-4">
+              <div class="h-full grid-cols-2 md:flex-col md:flex my-auto justify-center gap-10 text-left grid w-full coxs:gap-10">
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">Empowering Growth</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7.5%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">User Stisfaction</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">Technology Used</h3>
+                  <div class="mt-6 space-y-4 pl-[18px]">
+                    <div class="flex flex-wrap items-center gap-4">
+                      <img src="./images/wordpress.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/elementor.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/php.png" alt="" class="h-10 w-10 object-contain" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/mnmanti-age.png" alt="" class="h-[300px] w-full rounded-lg cursor-pointer object-cover object-top md:h-[480px]" />
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="md:grid coxs:flex coxs:flex-col-reverse coxs:justify-center coxs:items-start grid-cols-2 gap-4">
+              <div class="h-full grid-cols-2 md:flex-col md:flex my-auto justify-center gap-10 text-left grid w-full coxs:gap-10">
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">Empowering Growth</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7.5%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">User Stisfaction</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">Technology Used</h3>
+                  <div class="mt-6 space-y-4 pl-[18px]">
+                    <div class="flex flex-wrap items-center gap-4">
+                      <img src="./images/wordpress.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/elementor.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/php.png" alt="" class="h-10 w-10 object-contain" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/eslsca.png" alt="" class="h-[300px] w-full rounded-lg cursor-pointer object-cover object-top md:h-[480px]" />
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="md:grid coxs:flex coxs:flex-col-reverse coxs:justify-center coxs:items-start grid-cols-2 gap-4">
+              <div class="h-full grid-cols-2 md:flex-col md:flex my-auto justify-center gap-10 text-left grid w-full coxs:gap-10">
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">Empowering Growth</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7.5%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">User Stisfaction</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">Technology Used</h3>
+                  <div class="mt-6 space-y-4 pl-[18px]">
+                    <div class="flex flex-wrap items-center gap-4">
+                      <img src="./images/wordpress.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/elementor.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/php.png" alt="" class="h-10 w-10 object-contain" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/zoo-guide.png" alt="" class="h-[300px] w-full rounded-lg cursor-pointer object-cover object-top md:h-[480px]" />
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="md:grid coxs:flex coxs:flex-col-reverse coxs:justify-center coxs:items-start grid-cols-2 gap-4">
+              <div class="h-full grid-cols-2 md:flex-col md:flex my-auto justify-center gap-10 text-left grid w-full coxs:gap-10">
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">Empowering Growth</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">+7.5%</h3>
+                  <p class="mt-2 pl-[18px] text-sm leading-5">User Stisfaction</p>
+                </div>
+                <div class="maxmd:h-auto">
+                  <h3 class="rounded-sm border-l-2 border-pinky pl-3 text-xl font-bold leading-9">Technology Used</h3>
+                  <div class="mt-6 space-y-4 pl-[18px]">
+                    <div class="flex flex-wrap items-center gap-4">
+                      <img src="./images/wordpress.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/elementor.png" alt="" class="h-10 w-10 object-contain" />
+                      <img src="./images/php.png" alt="" class="h-10 w-10 object-contain" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img src="./images/farrisdesign.png " alt="" class="h-[300px] w-full rounded-lg cursor-pointer object-cover object-top md:h-[480px]" />
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="slider-nav w-11/12 mx-auto overflow-hidden relative">
+            <div class="slider-item carousel__item h-full w-full px-5 py-2 md:p-5 lg:p-7 xl:p-10">
+              <img src="./images/dog.png" alt="" class="mx-auto h-[90px] w-[270px] object-contain" />
+            </div>
+            <div class="slider-item carousel__item h-full w-full px-5 py-2 md:p-5 lg:p-7 xl:p-10">
+              <img src="./images/pizza.png" alt="" class="mx-auto h-[90px] w-[270px] object-contain" />
+            </div>
+            <div class="slider-item carousel__item h-full w-full px-5 py-2 md:p-5 lg:p-7 xl:p-10">
+              <img src="./images/glasses.png" alt="" class="mx-auto h-[90px] w-[270px] object-contain" />
+            </div>
+            <div class="slider-item carousel__item h-full w-full px-5 py-2 md:p-5 lg:p-7 xl:p-10">
+              <img src="./images/zoo-guide.webp" alt="" class="mx-auto h-[90px] w-[270px] object-contain" />
+            </div>
+            <div class="slider-item carousel__item h-full w-full px-5 py-2 md:p-5 lg:p-7 xl:p-10">
+              <img src="./images/lotion.png" alt="" class="mx-auto h-[90px] w-[270px] object-contain" />
+            </div>
+            <div class="slider-item carousel__item h-full w-full px-5 py-2 md:p-5 lg:p-7 xl:p-10">
+              <img src="./images/3d-media.png" alt="" class="mx-auto h-[90px] w-[270px] object-contain" />
+            </div>
+          </div>
+          <div class="flex items-center justify-center gap-4">
+            <button type="button" class="portfolio-prev border-2 border-primary rounded-full w-10 h-10 text-white bg-primary hover:bg-pinky hover:border-pinky flex justify-center items-center duration-300 md:absolute md:top-[70px] md:left-1"><i class="fa-solid fa-arrow-left md:text-xl"></i></button>
+            <button type="button" class="portfolio-next border-2 border-primary rounded-full w-10 h-10 text-white bg-primary hover:bg-pinky hover:border-pinky flex justify-center items-center duration-300 md:absolute md:top-[70px] md:right-1"><i class="fa-solid fa-arrow-right md:text-xl"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative py-20">
+        <img src="./images/buildyourdream-4078f74d.png" alt="" class="absolute inset-0 h-full w-full -z-20" />
+        <div class="maincontainer flex justify-between gap-10 text-white md:items-center maxmd:flex-col">
+          <div class="w-full max-w-[1020px]">
+            <h2 class="mb-3 text-3xl font-semibold">
+              <span class="text-pinky">Hire Remote & Project </span>
+              Based Developers for Wodwes
+            </h2>
+            <p class="leading-7">Power up your projects with WODWES remote developers. Boost productivity and achieve exceptional results. Get started today to unlock your project's full potential!</p>
+          </div>
+          <a href="" class="custom-btn bg-transparent text-white hover:bg-pinky hover:text-white">Get Started</a>
+        </div>
+      </div>
+      <div class="maincontainer lg:my-1" style="margin-top: 48px; margin-bottom: 48px">
+        <h2 class="text-left text-2xl font-bold lg:text-3xl">Frequently Asked <span class="text-pinky">Questions!</span></h2>
+        <p class="mb-7 mt-4 text-left text-base font-normal text-primary">We love hearing about how our work has helped businesses succeed and how WODWES became</p>
+        <div class="mx-auto main-div-accordian md:max-w-[1000px]">
+          <div class="mx-auto border-t border-x-gray-200 first:!border-t-0">
+            <button type="button" class="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm accordian-btn">
+              <span class="text-left text-base font-semibold text-primary md:text-lg">How does the WordPress development process work?</span>
+              <span class="h-6 w-6 flex justify-center items-center text-pinky border-2 border-pinky rounded-full"><i class="fa-solid fa-plus plus-icon"></i></span>
+            </button>
+            <div class="duration-300 content hidden">
+              <p class="pb-4 text-start leading-6 sm:text-base maxsm:text-sm">When you choose WODWES for WordPress development services, we will share the complete project timeline and plan with you and assign a dedicated project manager, account manager, and developer for smooth execution and deliveries.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto md:max-w-[1000px] main-div-accordian">
+          <div class="mx-auto border-t border-x-gray-200">
+            <button type="button" class="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm accordian-btn">
+              <span class="text-left text-base font-semibold text-primary md:text-lg">How much does it cost to hire a WordPress developer? </span>
+              <span class="h-6 w-6 text-pinky flex justify-center items-center border-2 border-pinky rounded-full"><i class="fa-solid fa-plus plus-icon"></i></span>
+            </button>
+            <div class="duration-300 content hidden">
+              <p class="pb-4 text-start leading-6 sm:text-base maxsm:text-sm">The cost of hiring a WordPress developer always depends on your project requirements. Additionally, we have a fixed and hourly pricing model that you can opt for according to your budget.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-auto md:max-w-[1000px] main-div-accordian">
+          <div class="mx-auto border-t border-x-gray-200">
+            <button type="button" class="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm accordian-btn">
+              <span class="text-left text-base font-semibold text-primary md:text-lg">Do you sign an NDA?</span>
+              <span class="h-6 w-6 text-pinky border-2 border-pinky flex justify-center items-center rounded-full"><i class="fa-solid fa-plus plus-icon"></i></span>
+            </button>
+            <div class="duration-300 content hidden">
+              <p class="pb-4 text-start leading-6 sm:text-base maxsm:text-sm">Yes, we do sign NDA (Non-Disclosure Agreement) to protect and secure your information. We also sign NDA with our developers and team, who are involved in projects.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto md:max-w-[1000px] main-div-accordian">
+          <div class="mx-auto border-t border-x-gray-200">
+            <button type="button" class="flex w-full items-center justify-between py-4 md:py-6 maxsm:text-sm accordian-btn">
+              <span class="text-left text-base font-semibold text-primary md:text-lg">Can you help me migrate my existing website to WordPress? </span>
+              <span class="h-6 w-6 text-pinky flex justify-center items-center border-2 border-pinky rounded-full"><i class="fa-solid fa-plus plus-icon"></i></span>
+            </button>
+            <div class="duration-300 content hidden">
+              <p class="pb-4 text-start leading-6 sm:text-base maxsm:text-sm">Yes, we provide WordPress migration services to help clients in smooth and hassle-free migration from any platform to WordPress. To get started, please email us at https://wodwes.com/.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-primary">
+      <div class="maincontainer grid py-12 xl:grid-cols-2">
+        <div>
+          <h3 class="text-lg font-bold text-pinky">Services</h3>
+
+          <ul class="mt-2 sm:columns-2">
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Laravel E-commerce Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointerleading-8 text-white duration-200 hover:text-pinky">PHP E-commerce Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">WordPress E-commerce Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Shopify Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">React Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Vue.js Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Angular Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">PHP Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">CodeIgniter Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Laravel Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">MERN Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">WordPress Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Magento Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">BigCommerce Development </a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Drupal Development </a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Joomla Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Social Media Creatives</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Website UI/UX</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Mobile App UI/UX</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sec-2 grid sm:grid-cols-2 2xl:grid-cols-4">
+          <div class="quick-links mt-4">
+            <h3 class="text-lg font-bold text-pinky cursor-pointer">Quick Links</h3>
+            <ul class="mt-2">
+              <li class="text-base font-normal leading-8 text-white cursor-pointer duration-300 hover:text-pinky">Contact Us</li>
+            </ul>
+          </div>
+          <div class="Contact-US mt-4">
+            <h3 class="text-lg font-bold text-pinky">Contact US</h3>
+            <ul class="mt-2">
+              <li class="text-base font-normal leading-8 text-white duration-200 hover:text-pinky cursor-pointer">Info@wodwes.com</li>
+              <li class="text-base font-normal leading-8 text-white duration-200 hover:text-pinky cursor-pointer">sales@wodwes.com</li>
+              <li class="text-base font-normal leading-8 text-white duration-200 hover:text-pinky cursor-pointer">+1 917 000 3956</li>
+            </ul>
+          </div>
+
+          <div class="NEWSLETTER mt-4 2xl:col-span-2 2xl:pl-6">
+            <h3 class="text-lg font-bold text-pinky">NEWSLETTER</h3>
+            <input type="text" class="mt-2 w-full py-3.5 pl-4 text-base outline-none" placeholder="Enter your email address" />
+            <a href="" class="custom-btn2 bg-pinky hover:bg-transparent mt-3 text-white hover:!text-pinky">Get Started</a>
+          </div>
+
+          <div class="follow-us ml-auto mt-6 sm:pt-14 2xl:col-span-4">
+            <h3 class="text-right text-lg font-bold text-pinky">Follow Us</h3>
+            <div class="mt-4 flex gap-x-4">
+              <span class="flex justify-center items-center h-11 w-11 text-xl text-white border border-white rounded-full hover:text-pinky hover:border-pinky duration-300 cursor-pointer"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="flex justify-center items-center h-11 w-11 text-xl text-white border border-white rounded-full cursor-pointer hover:text-pinky hover:border-pinky duration-300"><i class="fa-brands fa-linkedin-in"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="py-4 text-center text-sm text-[rgb(170_170_171/1)]">© Copyright 2023 All right reserved by Wodwes</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

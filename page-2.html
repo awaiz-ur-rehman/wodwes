@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/output.css" />
+  </head>
+  <body>
+    <div class="bg-primary flex flex-wrap items-center justify-center gap-y-2 gap-x-0 xs:gap-x-6 md:gap-14 py-2">
+      <p class="text-white text-sm"><span class="border-b hover:text-pink-600 hover:cursor-pointer transition hover:border-b-pink-600">Get a Quote</span> Today to claim $200 free credit.</p>
+      <p class="text-white text-sm flex items-center gap-2">
+        <span class="text-xl"><i class="fa-solid fa-phone"></i> </span>
+        <span class="">+ 92 306 1070 678</span>
+      </p>
+      <p class="text-white text-sm flex items-center gap-2">
+        <span class="text-xl"><i class="fa-solid fa-envelope"></i> </span>
+        <span class="">sales@wodwes.com</span>
+      </p>
+    </div>
+
+    <nav class="sticky top-0 z-50 bg-white duration-300 shadow-lg">
+      <div class="maincontainer flex items-center justify-between bg-white py-4 lg:relative lg:z-40">
+        <img src="./images/Wodwes_logo-f91da705.png" alt="" class="w-32 coxs:w-36 md:w-40 xl:w-48 cursor-pointer" />
+        <div class="flex justify-center items-center gap-x-12 nav-ul-div">
+          <ul class="flex justify-between items-center gap-x-8 max-lg:hidden nav-ul">
+            <li class="weight cursor-pointer text-pinky">Home</li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky services" data-toshow="1">
+              Services <span class="text-gray-400"> <i class="fa-solid fa-angle-down arrow"></i></span>
+            </li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky services" data-toshow="2">
+              Industries <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span>
+            </li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky services" data-toshow="3">
+              Technologies <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span>
+            </li>
+            <li class="weight cursor-pointer transition-all hover:text-pinky">Portfolio</li>
+          </ul>
+          <button type="button" class="px-6 py-[15px] pinky text-white border-2 border-pinky font-semibold duration-300 max-lg:hidden hover:bg-white hover:text-black hover:border-pinky">Contact us</button>
+        </div>
+
+        <div class="justify-center items-center gap-x-6 hidden max-lg:flex">
+          <button type="button" class="px-5 py-[13px] pinky text-white border font-semibold transition-all hover:bg-white hover:text-black hover:border-pinky">Contact us</button>
+          <!-- Hamburger -->
+          <span id="hamburger" class="text-4xl cursor-pointer bars"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </div>
+
+      <!-- after 992 -->
+
+      <div class="absolute top-[85px] scale-0 overflow-auto h-screen pb-40 z-50 left-0 right-0 duration-300 bg-white bar-content" id="mobNav">
+        <ul class="nav-ul maincontainer">
+          <li class="weight cursor-pointer py-3 text-pinky">Home</li>
+          <li class="weight cursor-pointer py-3 transition-all hover:text-pinky flex items-center justify-between industries" data-todown="1">
+            Services <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span>
+          </li>
+          <li class="weight cursor-pointer py-3 transition-all hover:text-pinky flex items-center justify-between industries" data-todown="2">
+            Industries <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span>
+          </li>
+          <li class="weight cursor-pointer py-3 transition-all hover:text-pinky flex items-center justify-between industries" data-todown="3">
+            Technologies <span class="text-gray-400"> <i class="fa-solid fa-angle-down"></i></span>
+          </li>
+          <li class="weight cursor-pointer py-3 transition-all hover:text-pinky">Portfolio</li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- megamenu -->
+
+    <!-- services -->
+
+    <div class="custom_space flex lg:shadow-lg left-72 right-0 xl:top-[130px] megamenu maincontainer hidden" id="toshow-1">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-1.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">E-commerce Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Shopify Development</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-2.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Front-end Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Vue.js Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Development</a>
+        </li>
+      </ul>
+
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-3.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Software Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP Software Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">CodeIgniter Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel Software Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MERN Software Development</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-4.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">CMS Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Magento Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Drupal Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">BigCommerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Joomla Development</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- industries -->
+
+    <div class="custom_space flex lg:shadow-lg left-72 right-0 xl:top-[130px] megamenu maincontainer hidden" id="toshow-2">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Healthcare</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Travel</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Insurance</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Manufacturing</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Transportation and Logistics</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">EdTech</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Enterprise</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Media and Entertainment</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Telecom</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- technologies -->
+    <div class="custom_space flex lg:shadow-lg left-72 right-0 xl:top-[130px] megamenu maincontainer hidden" id="toshow-3">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">IOS Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Andriod Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Node Js Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Blackchain Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> TypeScript Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MEAN Stack Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mern Stack Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Python Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mobile Application Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Wordpress Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Js Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Js Developers</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- after 992 megamenu -->
+
+    <!-- services -->
+
+    <div class="flex hidden flex-col justify-center items-start gap-6 pt-[1.5rem] maincontainer drop-menu" id="todown-1">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-1.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">E-commerce Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress E-commerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Shopify Development</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-2.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Front-end Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Vue.js Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Development</a>
+        </li>
+      </ul>
+
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-3.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">Software Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">PHP Software Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">CodeIgniter Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Laravel Software Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MERN Software Development</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-4.png" alt="" class="w-6 h-6" />
+          <h3 class="font-semibold tracking-0.32px lg:text-sm xl:text-lg">CMS Development</h3>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">WordPress Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Magento Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Drupal Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">BigCommerce Development</a>
+        </li>
+        <li class="flex items-center gap-1 text-sm tracking-[0.28px] lg:text-xs xl:text-sm">
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Joomla Development</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- industries -->
+
+    <div class="flex hidden flex-col justify-center items-start gap-6 pt-[1.5rem] maincontainer drop-menu" id="todown-2">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Healthcare</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Travel</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Insurance</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Manufacturing</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Transportation and Logistics</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">EdTech</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Enterprise</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Media and Entertainment</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Telecom</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- technologies -->
+    <div class="flex hidden flex-col justify-center items-start gap-6 pt-[1.5rem] maincontainer drop-menu" id="todown-3">
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">IOS Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> Andriod Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Node Js Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Blackchain Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky"> TypeScript Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">MEAN Stack Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mern Stack Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Python Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Mobile Application Developers</a>
+        </li>
+      </ul>
+      <ul class="space-y-4 3xl:space-y-7">
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Wordpress Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">React Js Developers</a>
+        </li>
+        <li class="flex items-center gap-1">
+          <img src="./images/sub-menu-pic-5.png" alt="" class="w-6 h-6" />
+          <a href="#" class="megamenu-item relative duration-200 hover:text-pinky">Angular Js Developers</a>
+        </li>
+      </ul>
+    </div>
+
+    <header class="relative py-14 md:pb-36 md:pt-28">
+      <img src="./images/Banner-22ae39b2.png" alt="Header banner" class="absolute inset-0 -z-30 w-full h-full" />
+      <div class="maincontainer grid items-center gap-10 py-10 lg:grid-cols-2">
+        <div class="maxlg:order-2">
+          <h1 class="text-3xl font-bold text-white md:text-4xl md:leading-[60px] lg:text-5xl xl:text-6xl">
+            Let’s Discuss Your Project and Turn Your
+            <span class="text-pinky">Vision Into Reality</span>!
+          </h1>
+          <p class="w-full !leading-9 text-grayish xl:text-lg text-white">The start of your next chapter is just one form submission away from reality.</p>
+        </div>
+        <div class="bottom-0 right-0 top-0 flex items-center lg:absolute">
+          <img src="./images/contactbanner-c152b40e.png" alt="" class="my-auto w-full lg:w-[500px] xl:w-[600px] 2xl:w-[700px] 3xl:w-[800px] maxlg:ml-[5.6%] maxlg:h-full" />
+        </div>
+      </div>
+    </header>
+
+    <div>
+      <div class="maincontainer clients pt-12 lg:pt-16 xl:pt-20">
+        <h2 class="text-left text-2xl font-bold lg:text-3xl">Contact Us</h2>
+        <p class="mb-7 mt-4 w-full max-w-4xl text-left text-base font-normal text-secondary">To contact us, simply fill out the form at the bottom of this page. To send us an RFP, RFI or other project specifications, email us at <span class="text-pinky cursor-pointer">info@wodwes.com</span></p>
+      </div>
+    </div>
+
+    <div class="maincontainer py-2 mb-24">
+      <div class="mx-auto h-full xs:w-5/6">
+        <h2 class="text-lg font-bold text-primary">Our Main Office in US</h2>
+        <div class="mt-2 grid items-center rounded-lg relative bg-white shadow-[4px_4px_19px_0px_rgba(0,0,0,0.10)] lg:grid-cols-[300px_auto] xl:grid-cols-[400px_auto] 2xl:grid-cols-[500px_auto]">
+          <div>
+            <img src="./images/address-0960c5ca.png" alt="" class="h-[100%] top w-[43%] top-0 lg:absolute rounded-lg maxxl:object-cover" />
+          </div>
+          <div class="w-full space-y-14 px-5 py-10 lg:pl-14">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-pinky"></i>
+              <div class="flex items-center gap-2">
+                <h3 class="whitespace-nowrap text-base font-bold leading-6 lg:text-xl">Address :</h3>
+                <address class="not-italic !leading-6 maxlg:text-sm">30N Gold St, Sheridan, US</address>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-pinky"></i>
+              <div class="flex items-center gap-2">
+                <h3 class="whitespace-nowrap text-base font-bold leading-6 lg:text-xl">Phone :</h3>
+                <address class="not-italic !leading-6 maxlg:text-sm">+1 917 000 3956</address>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-pinky"></i>
+              <div class="flex items-center gap-2">
+                <h3 class="whitespace-nowrap text-base font-bold leading-6 lg:text-xl">Email :</h3>
+                <address class="not-italic !leading-6 maxlg:text-sm">info@wodwes.com</address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative py-20">
+      <img src="./images/Banner-22ae39b2.png" alt="" class="absolute inset-0 -z-10 h-full w-full" />
+      <div class="maincontainer">
+        <div class="w-full max-w-[572px] text-white">
+          <h2 class="text-3xl font-bold">Contact Us</h2>
+          <p class="mt-2">Fill out the form below and we will contact you shortly</p>
+        </div>
+        <form>
+          <div class="mx-auto mt-10 grid grid-cols-2 gap-x-7 gap-y-3 md:w-3/4">
+            <input type="text" class="inputwrapper" placeholder="First Name" required />
+            <input type="text" class="inputwrapper" placeholder="Last Name" required />
+            <input type="text" class="inputwrapper" placeholder="Email" required />
+            <input type="text" class="inputwrapper" placeholder="Phone Number" required />
+            <input type="text" class="inputwrapper" placeholder="Company" required />
+            <select class="inputwrappper rounded-[10px]">
+              <option value="Country">Country</option>
+              <option value="Afganistan">Afganistan</option>
+              <option value="Åland Islands">Åland Islands</option>
+              <option value="Albania">Albania</option>
+            </select>
+            <textarea class="col-span-2 rounded-[10px] bg-white p-5 text-sm text-gray-500 outline-none" rows="10" placeholder="Message" required></textarea>
+
+            <div class="col-span-2 flex justify-between gap-5 pt-5 sm:items-center sm:gap-2 maxsm:flex-col">
+              <input type="checkbox" class="checkbox" />
+              <label class="wrapper flex items-center text-white">I want to receive news and updates once in a while </label>
+              <button type="button" class="px-12 py-[12px] bg-transparent mt-4 text-white border-2 border-pinky font-semibold duration-300 hover:bg-pinky hover:text-white hover:border-pinky">Get Started</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="maincontainer clients py-12 lg:py-16 xl:py-20">
+      <h2 class="text-left text-2xl font-bold lg:text-3xl">Locations</h2>
+      <p class="mb-7 mt-4 w-full max-w-4xl text-left text-base font-normal text-secondary">To contact us, simply fill out the form at the bottom of this page. To send us an RFP, RFI or other project specifications, email us at <span class="text-pinky cursor-pointer">info@wodwes.com</span></p>
+
+      <div class="mx-auto mt-14 grid gap-8 md:grid-cols-2 lg:w-5/6">
+        <div class="overflow-hidden rounded-10px bg-section rounded-xl">
+          <img src="./images/unitedstate-5b97ce86.png" alt="" class="h-64 w-full object-cover" />
+          <div class="p-9">
+            <h2 class="text-3xl font-bold">Unitated States</h2>
+            <address class="my-5 text-lg not-italic 3xl:text-xl">30N Gold St, Sheridan, US</address>
+            <a href="#" class="text-lg 3xl:text-xl">info@wodwes.com</a>
+            <br />
+            <a href="#" class="text-lg 3xl:text-xl">+1 917 000 3956</a>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-10px bg-section rounded-xl">
+          <img src="./images/pakistan-819ec482.png" alt="" class="h-64 w-full object-cover" />
+          <div class="p-9">
+            <h2 class="text-3xl font-bold">Pakistan</h2>
+            <address class="my-5 text-lg not-italic 3xl:text-xl">Basement Askari bank, Main Samanabad Rd, Faisalabad, Pakistan</address>
+            <a href="#" class="text-lg 3xl:text-xl">info@wodwes.com</a>
+            <br />
+            <a href="#" class="text-lg 3xl:text-xl">+1 917 000 3956</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary">
+      <div class="maincontainer grid py-12 xl:grid-cols-2">
+        <div>
+          <h3 class="text-lg font-bold text-pinky">Services</h3>
+
+          <ul class="mt-2 sm:columns-2">
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Laravel E-commerce Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointerleading-8 text-white duration-200 hover:text-pinky">PHP E-commerce Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">WordPress E-commerce Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Shopify Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">React Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Vue.js Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Angular Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">PHP Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">CodeIgniter Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Laravel Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">MERN Software Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">WordPress Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Magento Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">BigCommerce Development </a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Drupal Development </a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Joomla Development</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Social Media Creatives</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Website UI/UX</a>
+            </li>
+            <li>
+              <a href="" class="text-base font-normal cursor-pointer leading-8 text-white duration-200 hover:text-pinky">Mobile App UI/UX</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sec-2 grid sm:grid-cols-2 2xl:grid-cols-4">
+          <div class="quick-links mt-4">
+            <h3 class="text-lg font-bold text-pinky cursor-pointer">Quick Links</h3>
+            <ul class="mt-2">
+              <li class="text-base font-normal leading-8 text-white cursor-pointer duration-300 hover:text-pinky">Contact Us</li>
+            </ul>
+          </div>
+          <div class="Contact-US mt-4">
+            <h3 class="text-lg font-bold text-pinky">Contact US</h3>
+            <ul class="mt-2">
+              <li class="text-base font-normal leading-8 text-white duration-200 hover:text-pinky cursor-pointer">Info@wodwes.com</li>
+              <li class="text-base font-normal leading-8 text-white duration-200 hover:text-pinky cursor-pointer">sales@wodwes.com</li>
+              <li class="text-base font-normal leading-8 text-white duration-200 hover:text-pinky cursor-pointer">+1 917 000 3956</li>
+            </ul>
+          </div>
+
+          <div class="NEWSLETTER mt-4 2xl:col-span-2 2xl:pl-6">
+            <h3 class="text-lg font-bold text-pinky">NEWSLETTER</h3>
+            <input type="text" class="mt-2 w-full py-3.5 pl-4 text-base outline-none" placeholder="Enter your email address" />
+            <a href="" class="custom-btn2 bg-pinky hover:bg-transparent mt-3 text-white hover:!text-pinky">Get Started</a>
+          </div>
+
+          <div class="follow-us ml-auto mt-6 sm:pt-14 2xl:col-span-4">
+            <h3 class="text-right text-lg font-bold text-pinky">Follow Us</h3>
+            <div class="mt-4 flex gap-x-4">
+              <span class="flex justify-center items-center h-11 w-11 text-xl text-white border border-white rounded-full hover:text-pinky hover:border-pinky duration-300 cursor-pointer"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="flex justify-center items-center h-11 w-11 text-xl text-white border border-white rounded-full cursor-pointer hover:text-pinky hover:border-pinky duration-300"><i class="fa-brands fa-linkedin-in"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="py-4 text-center text-sm text-[rgb(170_170_171/1)]">© Copyright 2023 All right reserved by Wodwes</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
